@@ -36,10 +36,10 @@
         // Calcul du temps restant
         var diff = this.dateDiff(timeNow, this.targetTime);
          
-        this.displayElement.month.text(  diff.month  );
-        this.displayElement.week.text( diff.week );
-        this.displayElement.day.text(  diff.day );
-        this.displayElement.hour.text(  diff.hour );
+        this.displayElement.month.text(  updateTime(diff.month)  );
+        this.displayElement.week.text( updateTime(diff.week) );
+        this.displayElement.day.text(  updateTime(diff.day) );
+        this.displayElement.hour.text(  updateTime(diff.hour) );
     },
      
     // Calcul la différence entre 2 dates,
@@ -47,18 +47,26 @@
         var diff = {}                           // Initialisation du retour
         var tmp = date2 - date1;
  
-        tmp = Math.floor(tmp/3600000);           // Nombre de secondes entre les 2 dates
-        diff.hour = tmp % 24;                    // Extraction du nombre de secondes
-        tmp = Math.floor((tmp-diff.hour)/24);    // Nombre de minutes (partie entière)
-        diff.day = tmp % 7;                    // Extraction du nombre de minutes
-        tmp = Math.floor((tmp-diff.day)/7);    // Nombre d'heures (entières)
-        diff.week = tmp % 5;                   // Extraction du nombre d'heures
-        tmp = Math.floor((tmp-diff.week)/5);   // Nombre de jours restants
-        diff.month = tmp;
- 
+        tmp = Math.floor(tmp/3600000);           
+        diff.hour = tmp % 24;                    //Nombre d'heures
+        tmp = Math.floor((tmp-diff.hour)/24);    
+        diff.day1 = tmp % 30;                    //Nombre de jours en tout
+        tmp = Math.floor((tmp-diff.day1)/30);  
+        diff.month = tmp;                        //Nombre de mois
+        diff.day = diff.day1 % 7;                // Nombre de jours réels
+        diff.week=(diff.day1-diff.day)/7;        //Nombre de semaines
         return diff;
     }
 };
+
+function updateTime(k) {       //Pour être toujours en format 2chiffres
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
  
 jQuery(function($){
     // Lancement du compte à rebours au chargement de la page
