@@ -36,7 +36,7 @@
         // Calcul du temps restant
         var diff = this.dateDiff(timeNow, this.targetTime);
          
-        this.displayElement.month.text(  updateTime(diff.month)  );
+        this.displayElement.month.text( updateTime(diff.month) );
         this.displayElement.week.text( updateTime(diff.week) );
         this.displayElement.day.text(  updateTime(diff.day) );
         this.displayElement.hour.text(  updateTime(diff.hour) );

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 /** PHONE **/
 html{
 	width: 100%;
@@ -23,6 +25,7 @@ body{
 	margin: 0;
 	padding: 20px;
 	text-align: center;
+	font-family: Roboto;
 }
 
 #main{
@@ -34,7 +37,7 @@ body{
 }
 
 #countdown{
-	width: 90%;
+	width: 100%;
 	display: inline-flex;
 	justify-content: space-between;
 	margin-left: auto;
@@ -42,17 +45,20 @@ body{
 }
 
 #countdown span{
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	padding-right: 15px;
 	padding-left: 15px;
 	background-color: #044476;
 	border:8px solid #2F7A9E;
 	color: white;
 	text-align: center;
+	font-family: Roboto;
+	font-size: 35px;
 }
 
 .column{
+	margin: 4px;
 	display: flex;
 	flex-direction: column;
 }
@@ -63,6 +69,7 @@ body{
 	color: white;
 	background-color: #044476;
 	text-align: center;
+	font-family: Roboto;
 }
 
 #footer{
@@ -86,6 +93,7 @@ body{
 	margin-bottom: 7px;
 	background-color:#2F7A9E;
 	padding: 2px;
+	font-family: Roboto;
 }
 
 #right a{
@@ -93,6 +101,7 @@ body{
 	color: white;
 	background-color: #2F7A9E;
 	padding: 2px;
+	font-family: Roboto;
 }
 
 #hourglass{
