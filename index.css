@@ -15,7 +15,8 @@ body{
 	background-color: #e4e9e9;
 }
 
-#header{
+#header{ 
+	flex: O;
 	width: 100%;
 	background-color: #044476;
 }
@@ -26,22 +27,21 @@ body{
 	padding: 20px;
 	text-align: center;
 	font-family: Roboto;
+	font-size: 70px;
 }
 
 #main{
+	flex: 1;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: space-around;
-	margin-top: 10px;
 }
 
-#countdown{
-	width: 100%;
+#countdown{	
+	width: 95%;
 	display: inline-flex;
 	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 50px;
 }
 
 #countdown span{
@@ -54,11 +54,10 @@ body{
 	color: white;
 	text-align: center;
 	font-family: Roboto;
-	font-size: 35px;
+	font-size: 150px;
 }
 
 .column{
-	margin: 4px;
 	display: flex;
 	flex-direction: column;
 }
@@ -70,11 +69,11 @@ body{
 	background-color: #044476;
 	text-align: center;
 	font-family: Roboto;
+	font-size: 40px;
 }
 
 #footer{
-	position: absolute;
-	bottom: 0;
+	flex: 0;
 	width: 100%;
 	background-color: #044476;
 	padding-top: 10px;
@@ -84,7 +83,11 @@ body{
 }
 
 #right{
+	margin: auto;
 	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
 
 #right h2{
@@ -94,6 +97,7 @@ body{
 	background-color:#2F7A9E;
 	padding: 2px;
 	font-family: Roboto;
+	font-size: 50px;
 }
 
 #right a{
@@ -102,42 +106,51 @@ body{
 	background-color: #2F7A9E;
 	padding: 2px;
 	font-family: Roboto;
+	font-size: 40px;
 }
 
-#hourglass{
-	width:20%;
+#hourglass {
+	flex:1;
+	display: flex;
+	justify-content: flex-end;
 }
+
+#hourglass img{
+	width: 40%;
+}
+
 
 
 /**TABLETTE**/
-@media screen and (min-width: 768px) {
-    #footer{
-    	height: 20%;
-    }
+/*@media screen and (min-width: 768px) {
+
     #hourglass{
     	width: 15%;
     }
-}
+}*/
 
 
 /** PETIT DESKTOP**/
-@media screen and (min-width: 968px) {
+@media only screen and (min-width: 992px)  {
 	    #footer{
     	height: 20%;
     }
-    #hourglass{
+    #hourglass img{
     	width: 12%;
+    }
     }
 }
     
 
 
 /**DESKTOP**/
-@media screen and (min-width: 1200px) {
-	    #footer{
-    	height: 20%;
-    }
-    #hourglass{
+@media only screen and (min-width: 1200px) {
+
+	#header{
+		flex: 0;
+	}
+
+    #hourglass img{
     	width: 12%;
     }
 }
