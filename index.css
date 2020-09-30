@@ -13,6 +13,9 @@ body{
 	display: flex;
 	flex-direction: column;
 	background-color: #e4e9e9;
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 }
 
 #header{ 
