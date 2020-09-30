@@ -130,9 +130,9 @@ body{
 	justify-content: flex-end;
 }
 
-/*#hourglass img{
+#hourglass img{
 	width: 40%;
-}*/
+}
 
 
 
@@ -142,10 +142,10 @@ body{
 	#illu img{
 		width: 40%;
 	} 
-/*
+
     #hourglass img{
     	width:50%;
-    }*/
+    }
 }
 
 
@@ -170,9 +170,9 @@ body{
 		margin-right: 30px;
 	}
 
-/*	#hourglass img{
+	#hourglass img{
     	width: 20%;
-    }*/
+    }
 
     #right a{
     	margin: auto;
@@ -188,10 +188,10 @@ body{
 	#illu img{
 		width: 30%;
 	} 
-/*
+
 		#hourglass img{
     	width: 20%;
-    }*/
+    }
 
 }
     
