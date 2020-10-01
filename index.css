@@ -142,20 +142,15 @@ body{
 	#illu img{
 		width: 40%;
 	} 
-
-    #hourglass img{
-    	width:50%;
-    }
 }
 
 
 /** PETIT DESKTOP**/
 @media only screen and (min-width: 992px)  {
  	
- 	#countdown span{
- 		padding-top: 10px;
-		padding-bottom: 10px;
- 	}
+	#main{
+	justify-content: center;
+	}
 
 	#illu img{
 		display: none;
@@ -171,7 +166,7 @@ body{
 	}
 
 	#hourglass img{
-    	width: 20%;
+    	width: 50%;
     }
 
     #right a{
@@ -184,10 +179,6 @@ body{
 
 /**DESKTOP**/
 @media only screen and (min-width: 1200px) {
-
-	#illu img{
-		width: 30%;
-	} 
 
 		#hourglass img{
     	width: 20%;
